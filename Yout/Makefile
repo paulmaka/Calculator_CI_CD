@@ -1,11 +1,11 @@
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall
 
-app: main.cpp math.cpp
-	$(CXX) $(CXXFLAGS) main.cpp math.cpp -o app
+app: Main.cpp Math.cpp
+	$(CXX) $(CXXFLAGS) Main.cpp Math.cpp -o app
 
-test: test.cpp math.cpp
-	$(CXX) $(CXXFLAGS) test.cpp math.cpp -o test
+test: Test.cpp Math.cpp
+	$(CXX) $(CXXFLAGS) Test.cpp Math.cpp -o test
 
 run-tests: test
 	./test

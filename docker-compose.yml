@@ -1,0 +1,7 @@
+services:
+  backend:
+    image: calculator-app:latest
+    container_name: calculator-container
+    ports:
+      - 80:8000
+    command: "./app"
